@@ -16,5 +16,19 @@ namespace PlanetRush.Models
         {
             get { return Spacecraft.CurrentFuel; }
         }
+        public Player()
+        {
+            Spacecraft = new Spacecraft();
+        }
+        public void AddFuel(int fuel)
+        {
+            Spacecraft.CurrentFuel += fuel;
+        }
+        public void TravelLightYears(int lightYears)
+        {
+            Spacecraft.CurrentFuel -= lightYears * Spacecraft.EngineEfficiency ;
+        }
+
+
     }
 }
