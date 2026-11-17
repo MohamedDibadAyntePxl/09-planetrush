@@ -22,5 +22,15 @@ namespace PlanetRush.Models
         {
             get { return(TonsOfRawAetherium + TonsOfTrilliumAlloys) / 10; }
         }
+        private Random rng = new Random();
+        public Planet() : this(0)
+        {
+
+        }
+        public Planet(int galaxyCode)
+        {
+
+        }
+
     }
 }
